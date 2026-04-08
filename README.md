@@ -1,11 +1,11 @@
 # Simple Coffee - Full-Stack E-commerce Platform 
-My self-learning project! 
+A complete coffee shop e-commerce website with shopping cart, checkout system, and order management.
 
 ## Features
 ### Frontend
-- shopping cart
-- checkout system
-- order management
+- Mobile-first layout with hamburger menu navigation
+- Add/remove items, quantity controls, real-time price calculation
+- Popup modal with order confirmation
 - HTML, CSS, JavaScript
 
 ### Backend
