@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Coffee - Order Your Brew</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">☕ Simple Coffee</div>
+        
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="search">🔍</div>
+    </nav>
+    
+    <header>
+        <h1> Simple Coffee</h1>
+        <p>Freshly brewed, just for you</p>
+        </header>
+    <main>
+        <h2>Today's Menu</h2>
+        <div class="menu-grid">
+            <div class="coffee-card" data-name="Classic Black Coffee" data-price="29.00">
+                <h3>Classic Black Coffee</h3>
+                <p>Simple, smooth, and bold - our signature brew</p>
+                <p><strong>$29.00</strong></p>
+                <button class="add-to-cart-btn">Add to Order</button>
+            </div>
+
+            <div class="coffee-card" data-name="Cafe Latte" data-price="42.00">
+                <h3>Cafe Latte</h3>
+                <p>Espresso with steamed milk and light foam</p>
+                <p><strong>$42.00</strong></p>
+                <button class="add-to-cart-btn">Add to Order</button>
+            </div>
+
+            <div class="coffee-card" data-name="Flat White" data-price="43.00">
+                <h3>Flat White</h3>
+                <p>Ristretto with steamed milk and light foam</p>
+                <p><strong>$43.00</strong></p>
+                <button class="add-to-cart-btn">Add to Order</button>
+            </div>
+
+            <div class="coffee-card" data-name="Caramel Macchiato" data-price="44.00">
+                <h3>Caramel Macchiato</h3>
+                <p>Vanilla, milk, espresso, and caramel</p>
+                <p><strong>$44.00</strong></p>
+                <button class="add-to-cart-btn">Add to Order</button>
+            </div>
+
+            <div class="coffee-card" data-name="Mocha" data-price="46.00">
+                <h3>Mocha</h3>
+                <p>Espresso with chocolate and steamed milk</p>
+                <p><strong>$46.00</strong></p>
+                <button class="add-to-cart-btn">Add to Order</button>
+            </div>
+        </div>
+        <section class="featured">
+            <h2>Barista's Picks</h2>
+            <div class="featured-container">
+                <div class="featured-item">
+                    <span class="badge">🔥 Popular</span>
+                    <h3>Specialty Latte</h3>
+                    <p>Our most ordered drink</p>
+                </div>
+                <div class="featured-item">
+                    <span class="badge">🌿 New</span>
+                    <h3>Oat Milk Cappuccino</h3>
+                    <p>Dairy-free favorite<p>
+                </div>
+                <div class="featured-item">
+                    <span class="badge">⭐ Staff Pick</span>
+                    <h3>Honey Cinnamon Latte</h3>
+                    <p>Perfect for cold days<p>
+                </div>
+            </div>
+        </section>
+
+        <section id="checkout-section">
+            <h2>Checkout</h2>
+
+            <div id="checkour-preview">
+                <h3>Order Summary</h3>
+                <div id="checkout-items"></div>
+                <div class="checkout-total">
+                <div id="checkout-total"><strong>Total: $0.00</strong></div>
+            </div> 
+
+
+            <form id="checkout-form">
+                 <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="12345678">
+                </div>
+
+                <h3>Delivery Information</h3>
+
+                <div class="form-group">
+                    <label for="address">Street Address *</label>
+                    <input type="text" id="address" name="address" placeholder="123 Coffee St">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="district">District *</label>
+                        <input type="text" id="district" name="district" placeholder="Kwun Tong">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="region">Region *</label>
+                        <input type="text" id="region" name="region" placeholder="Kowloon">
+                    </div>
+                </div>
+                
+                <button type="submit" class="place-order-btn">Place Order</button>
+            </form>
+        </section>
+    </main>
+    <section id="order-section">
+        <h2>Your Order</h2>
+        <div id="cart-items">
+            <p>Your cart is empty</p>
+        </div>
+        <p><strong>Total: <span id="cart-total">$0.00</span></strong></p>
+        <button id="clear-cart-btn" class="clear-cart-btn">Clean Cart</button>
+    </section>
+
+    <button id="view-orders-btn" style="margin-top: 10px;">View All Orders (admin)</button>
+    
+    <footer>
+        <p> &copy; 2026 Simple Coffee - 123 Brew Street, Kowloon</p>
+        <p> Open daily: 7am - 7pm</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
