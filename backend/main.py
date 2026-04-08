@@ -6,14 +6,17 @@ from datetime import datetime
 import psycopg2
 import psycopg2.extras
 import json
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 #database
 DB_CONFIG = {
-    "host": "localhost",
-    "database": "coffee_shop_db",
-    "user": "shukyinghui",
-    "password": "",
-    "port": "5432"
+    "host": os.getenv("DB_HOST", "localhost"),
+    "database": os.getenv("DB_NAME", "coffee_shop_db"),
+    "user": os.getenv("DB_USER", "postgres"),
+    "password": os.getenv("DB_PASSWORD", ""),
+    "port":os.getenv("DB_PORT", "5432")
 }
 
 def get_db_connection():
